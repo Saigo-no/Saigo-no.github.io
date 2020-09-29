@@ -6,45 +6,80 @@
         <title>A&R Sicurezza - Contatti</title>
 
         <style>
-            .contacts td{
-                padding: 15px;
-            }
         </style>
 
         <link rel="stylesheet" href="styles.css">
     </head>
 <body style="background-color:rgb(255, 255, 255)">
 
-    <img src="src/logo.png" style="width: 250px; height: 100px;">
-
-    <!-- TOP MENU -->
     <div class="topnav">
-        <a href="index.html">Home</a>
+        <img src="src/logo.png" class="logo">
+        
         <a class="active" href="Contatti.html">Contatti</a>
+        <a href="index.html">Home</a>
     </div>
 
-    <h2>
-        Contattaci in massima libertà per approfondire ogni dubbio 
-        o per una consulenza ed un preventivo personalizzato per la tua specifica esigenza.
-    </h2>
-    <hr>
-    <!-- CONTACTS TABLE -->
-    <table class="contacts">
-        <tr>
-            <td><b>Chiama</b></td>
-            <td>&#9742 0444492005</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>&#9990 3296350557</td>
-        </tr>
-        <tr>
-            <td><b>Email</b></td>
-            <td>&#9993 aersicurezza@gmail.com</td>
-        </tr>
-    </table>
+    <div class="contacts_container">
+        <div class="contacts1">
+            <p>
+                Telefono : &#9742 0444492005<br>
+                Cellulare : &#9990 3296350557<br>
+                Email : &#9993 aersicurezza@gmail.com
+            </p>
+        </div>
+        <div class="contacts2">
+            <h1>Mandaci un messaggio</h1>
+            <form action="localhost/php/form_to_mail.php" method="post">
+                <div>
+                    <div class="input_label">
+                        <label class="label" for="first-name"><b>INSERISCI IL TUO NOME *</b></label>
+                    </div>
+                    <div class="input_label">
+                        <input id="first-name" type="text" name="first-name" placeholder="Nome" required>
+                        <input id="second-name" type="text" name="second-name" placeholder="Cognome" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="input_label">
+                        <label class="label" for="email"><b>INSERISCI LA TUA E-MAIL *</b></label>
+                    </div>
+                    <div  class="input_label">
+                        <input id="email" type="text" name="email" placeholder="Es. esempio@email.com" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="input_label">
+                        <label class="label" for="phone"><b>INSERISCI IL TUO NUMERO *</b> </label>
+                    </div>
+                    <div  class="input_label">
+                        <input id="phone" type="text" name="phone" placeholder="Es. +39 000 0000000" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="input_label">
+                        <label class="label" for="message"><b>INSERISCI IL MESSAGGIO *</b> </label>
+                    </div>
+                    <div  class="input_label">
+                        <textarea id="message" name="message" placeholder="Scrivi un messaggio." required></textarea>
+                    </div>
+                </div>
+                <div>
+                    <div class="input_label">
+                        <button>
+                            INVIA
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <script language="JavaScript"></script>
+        </div>
+    </div>
 
+    <div class="footer">
+        <span>A&R Sicurezza – Tel: 329 6350557 – P.Iva: 03863170241</span>
+    </div>
 
-    
+    <script src="js/main.js"></script>
+
 </body>
 </html>
