@@ -2,22 +2,51 @@
 <html lang="it">
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <title>A&R Sicurezza - Prodotti</title>
 
         <style>
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
     </head>
 <body>
 
     <!-- TOP MENU -->
     <div class="topnav">
-        <img src="src/logo.png" class="logo">
-        
-        <a href="Contatti.html">Contatti</a>
-        <a class="active" href="index.html">Home</a>
+        <div class="logo">
+            <a href="index.html"><img src="src/logo.png"></a>
+        </div>
+
+        <div>
+            <a class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="menu">
+            <a href="Contatti.html">Contatti</a>
+            <a href="prodotti.html">Prodotti</a>
+            <a class="active" href="index.html">Home</a>
+        </div>
+
     </div>
+
+    <div class="mainImage">
+        <div>
+            <h1>
+                A&R <span>SICUREZZA</span>
+            </h1>
+        </div>
+        <div>
+            <h2>
+                Proteggi ciò che ti è caro.
+            </h2>
+        </div>
+    </div>
+
+
+
 
     <div class="container">
         <h1>I nostri impianti<br><hr style="width: 300px;"></h1>
@@ -31,38 +60,30 @@
         <div class="buttonlist">
             <ul>
                 <li>
-                    <div>
+                    <div class="button">
                         <img src="src/antifurto.jpg" width="250px" height="150px">
-                    </div>
-                    <br>
-                    <div>
+                        <br>
                         <a href="#">Impianti antifurto</a>
-                    </div>
+                    </div>         
                 </li>
                 <li>
-                    <div>
+                    <div class="button">
                         <img src="src/antincendio.jpg"width="250px" height="150px">
-                    </div>
-                    <br>
-                    <div>
+                        <br>
                         <a href="#">Impianti antincendio</a>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="button">
                         <img src="src/videosorveglianza.jpg"width="250px" height="150px">
-                    </div>
-                    <br>
-                    <div>
+                        <br>
                         <a href="#">Video sorveglianza</a>
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div class="button">
                         <img src="src/controllo_accessi.jpg"width="250px" height="150px">
-                    </div>
-                    <br>
-                    <div>
+                        <br>
                         <a href="#">Controllo accessi</a>
                     </div>
                 </li>
@@ -74,7 +95,20 @@
         <span>A&R Sicurezza – Tel: 329 6350557 – P.Iva: 03863170241</span>
     </div>
 
+<script>
+    function openMenu(){
 
+        x = document.getElementById("menu");
+
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        }
+        else {
+        x.style.display = "block";
+        }
+
+    }
+</script>
 
 </body>
 </html>

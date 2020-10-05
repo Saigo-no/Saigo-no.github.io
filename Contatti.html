@@ -7,16 +7,29 @@
 
         <style>
         </style>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
     </head>
 <body style="background-color:rgb(255, 255, 255)">
 
+    <!-- TOP MENU -->
     <div class="topnav">
-        <img src="src/logo.png" class="logo">
-        
-        <a class="active" href="Contatti.html">Contatti</a>
-        <a href="index.html">Home</a>
+        <div class="logo">
+            <a href="index.html"><img src="src/logo.png"></a>
+        </div>
+
+        <div>
+            <a class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="menu">
+            <a class="active" href="Contatti.html">Contatti</a>
+            <a href="prodotti.html">Prodotti</a>
+            <a href="index.html">Home</a>
+        </div>
+
     </div>
 
     <div class="contacts_container">
@@ -79,7 +92,19 @@
         <span>A&R Sicurezza – Tel: 329 6350557 – P.Iva: 03863170241</span>
     </div>
 
-    <script src="js/main.js"></script>
-
+    <script>
+        function openMenu(){
+    
+            x = document.getElementById("menu");
+    
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            }
+            else {
+            x.style.display = "block";
+            }
+    
+        }
+    </script>
 </body>
 </html>

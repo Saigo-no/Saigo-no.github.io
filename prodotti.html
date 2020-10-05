@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="it">
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>A&R Sicurezza - Prodotti</title>
+
+        <style>
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+    <!-- TOP MENU -->
+    <div class="topnav">
+        <div class="logo">
+            <a href="index.html"><img src="src/logo.png"></a>
+        </div>
+
+        <div>
+            <a class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="menu">
+            <a href="Contatti.html">Contatti</a>
+            <a class="active" href="prodotti.html">Prodotti</a>
+            <a href="index.html">Home</a>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <h1>I nostri prodotti<br><hr style="width: 300px;"></h1>
+        <p>Solo i prodotti migliori vengono scelti per i vostri antifurti, ecco alcuni esempi</p>
+    </div>
+
+
+    <div class="container" style="display: flex;justify-content: center;flex-wrap: wrap;">
+        <div class="service">
+            <div class="image">
+                <img src="src/antifurto.jpg" alt="antifurto">
+            </div>
+            <div class="description">
+                <h1>
+                    Antifurti
+                </h1>
+                <p>
+                    Un impianto antifurto permette di proteggere la vostra casa quando voi non ci siete.
+                    Una centralina collegata ai sensori sparsi in tutto l'edificio consente una sicurezza totale.
+                </p>
+            </div>
+        </div>
+        <div class="service" style="flex-direction: row-reverse;">
+            <div class="image">
+                <img src="src/antincendio.jpg" alt="antincendio">
+            </div>
+            <div class="description">
+                <h1>
+                    Antincendio
+                </h1>
+                <p>
+                    Un impianto antincendio spegnerà sul nascere un incendio grazie al sistema di estinzione a pioggia
+                    attivato dai rilevatori di fumo.
+                </p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="image">
+                <img src="src/videosorveglianza.jpg" alt="videosorveglianza">
+            </div>
+            <div class="description">
+                <h1>
+                    Videosorveglianza
+                </h1>
+                <p>
+                    Le Telecamere installate permetteranno di cogliere il ladro sul fatto agendo così da ulteriore
+                    protezione, è possibile collegarsi alle telecamere da remoto in modo da poter tener d'occhio
+                    la propria casa.
+                </p>
+            </div>
+        </div>
+        <div class="service" style="flex-direction: row-reverse;">
+            <div class="image">
+                <img src="src/controllo_accessi.jpg" alt="controllo_accessi">
+            </div>
+            <div class="description">
+                <h1>
+                    Controllo accessi
+                </h1>
+                <p>
+                    Il controllo degli accessi permette lo spegnimento dell'impianto o l'apertura di una porta tramite
+                    impronta digitale o tesserino.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+   
+    <div class="footer">
+        <span>A&R Sicurezza – Tel: 329 6350557 – P.Iva: 03863170241</span>
+    </div>
+
+<script>
+    function openMenu(){
+
+        x = document.getElementById("menu");
+
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        }
+        else {
+        x.style.display = "block";
+        }
+
+    }
+</script>
+
+</body>
+</html>
